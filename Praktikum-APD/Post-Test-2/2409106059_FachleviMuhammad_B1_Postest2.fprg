@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106059_FachleviMuhammad_B1_PostestX"/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-16 10:30:30 AM"/>
+        <attribute name="created" value="QUNFUjtMQVBUT1AtUkU0UFYwNDE7MjAyNC0wOS0xNjswOToyNjoyMiBBTTsyNTg0"/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtUkU0UFYwNDE7MjAyNC0wOS0xNjsxMDozMDozMCBBTTsxOzI2Nzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="umur, tb, ta" type="Integer" array="False" size=""/>
+            <declare name="nama, mahasiswa" type="String" array="False" size=""/>
+            <output expression="&quot;Masukkan nama kamu: &quot;" newline="True"/>
+            <input variable="nama"/>
+            <output expression="&quot;Masukkan umur kamu: &quot;" newline="True"/>
+            <input variable="umur"/>
+            <output expression="&quot;Masukkan tinggi badan kamu (dalam cm): &quot;" newline="True"/>
+            <input variable="tb"/>
+            <output expression="&quot;Apakah kamu seorang mahasiswa? (Ya/Tidak): &quot;" newline="True"/>
+            <input variable="mahasiswa"/>
+            <assign variable="ta" expression="umur + tb"/>
+            <output expression="&quot;Nama:&quot;&amp;nama&amp;&quot; Umur:&quot;&amp;umur&amp;&quot; Tinggi Badan:&quot;&amp;tb&amp;&quot; Mahasiswa:&quot;&amp;mahasiswa&amp;&quot; Total Angka:&quot; &amp;ta" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
