@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="f2"/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-23 12:19:51 PM"/>
+        <attribute name="created" value="QUNFUjtMQVBUT1AtUkU0UFYwNDE7MjAyNC0wOS0yMzswNzozOTozMSBBTTsyNTg0"/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtUkU0UFYwNDE7MjAyNC0wOS0yMzsxMjoxOTo1MSBQTTsxOzI3MDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pilihan, sisi1, sisi2, sisi3, ks, n, jari, ll, alas, sisim, kj" type="Integer" array="False" size=""/>
+            <output expression="&quot;Menu: 1. keliling segitiga 2. lusas lingkarang 3. keliling jajar N. Keluar program&quot;" newline="True"/>
+            <input variable="pilihan"/>
+            <if expression="pilihan == 1">
+                <then>
+                    <output expression="&quot;Masukkan panjang sisi pertama:&quot;" newline="True"/>
+                    <input variable="sisi1"/>
+                    <output expression="&quot;Masukkan panjang sisi kedua: &quot;" newline="True"/>
+                    <input variable="sisi2"/>
+                    <output expression="&quot;Masukkan panjang sisi ketiga: &quot;" newline="True"/>
+                    <input variable="sisi3"/>
+                    <assign variable="Ks" expression="sisi1 + sisi2 + sisi3"/>
+                    <output expression="&quot;Keliling segitiga adalah:&quot; &amp;ks" newline="True"/>
+                </then>
+                <else>
+                    <if expression="pilihan == 2">
+                        <then>
+                            <output expression="&quot;Masukkan jari-jari lingkaran: &quot;" newline="True"/>
+                            <input variable="jari"/>
+                            <assign variable="ll" expression="(jari * jari) * 3.14"/>
+                            <output expression="&quot;Luas lingkaran adalah:&quot; &amp;ll" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="pilihan == 3">
+                                <then>
+                                    <output expression="&quot;Masukkan panjang alas: &quot;" newline="True"/>
+                                    <input variable="alas"/>
+                                    <output expression="&quot;Masukkan panjang sisi miring: &quot;" newline="True"/>
+                                    <input variable="sisim"/>
+                                    <assign variable="kj" expression="2 * (alas + sisim)"/>
+                                    <output expression="&quot;Keliling jajar genjang adalah:&quot; &amp;kj" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="pilihan == n">
+                                        <then>
+                                            <output expression="&quot;Terima kasih telah menggunakan program ini.&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Pilihan tidak valid, silakan coba lagi.&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
